@@ -1,0 +1,19 @@
+import java.io.*;
+import java.lang.*;
+import java.util.Scanner;
+class area
+{
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        float a,b,c;
+        float area,ar,p;
+        a=s.nextInt();
+        b=s.nextInt();
+        c=s.nextInt();
+        p=(a + b + c)/2;
+        ar=p*(p-a)*(p-b)*(p-c);
+        area=(float)Math.sqrt(ar);
+        System.out.println(String.format("%.2f",area));
+    }
+}
