@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class largest
+{
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        int m=s.nextInt();
+        int a[]=new int[20];
+        int cnt=0,max=0;
+        while(m>0)
+        {
+            int r=m%10;
+            a[cnt]=r;
+            m=m/10;
+            cnt++;
+        }
+        for(int i=0;i<cnt;i++)
+        {
+            if(max<a[i])
+            {
+                max=a[i];
+            }
+        }
+        System.out.println(max);
+    }
+}
