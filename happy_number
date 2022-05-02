@@ -1,0 +1,31 @@
+import java.util.Scanner;
+class happy
+{
+ 
+ static int sum(int m)
+    {
+        int su=0;
+        while(m>0)
+        {
+        int r=m%10;
+        int k=(r*r);
+        su=su+k;
+        m=m/10;
+    }
+    if(su<=9)
+    return su;
+    else
+    return sum(su);
+
+}
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int p=sum(n);
+        if(p==1 || p==7)
+        System.out.println("True");
+        else
+        System.out.println("False");
+    }
+}
