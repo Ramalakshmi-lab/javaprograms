@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class reverse
+{
+    static int revs(int m)
+    {
+        int su=0;
+        while(m>0)
+        {
+        int r=m%10;
+        su=su*10+r;
+        m=m/10;
+    }
+    return su;
+    
+}
+public static void main(String args[])
+{
+    Scanner s=new Scanner(System.in);
+    int n=s.nextInt();
+    int p=revs(n);
+    System.out.println(p);
+}
+}
