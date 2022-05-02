@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class disarium
+{
+public static void main(String args[])
+{
+Scanner si=new Scanner(System.in);
+int n=si.nextInt();
+int d,i,r,s=0,t;
+t=n;
+d=(int)Math.log10(n)+1;
+while(n>0)
+{
+r=n%10;
+s=s+(int)Math.pow(r,d);
+n=n/10;
+d--;
+}
+if(s==t)
+{
+System.out.println("True");
+}
+else
+{
+System.out.println("False");
+}
+}
+}
