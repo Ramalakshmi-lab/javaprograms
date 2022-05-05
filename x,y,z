@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class power
+{
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        int a=s.nextInt();
+        int b=s.nextInt();
+        int c=s.nextInt();
+        int p=(int)Math.pow(a,b);
+        int k=p%c;
+        System.out.println(k);
+    }
+}
