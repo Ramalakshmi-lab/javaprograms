@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class palin
+{
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int r,p=0;
+        int t=n;
+        while(n>0)
+        {
+            r=n%10;
+            p=p*10+r;
+            n=n/10;
+        }
+        if(p==t)
+        System.out.println("True");
+        else
+        System.out.println("False");
+    }
+}
