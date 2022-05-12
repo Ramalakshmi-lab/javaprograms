@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+int dig(int m)
+{
+    int p;
+    if(m==0)
+    return 1;
+    p=log10(m)+1;
+    return p;
+}
+int main()
+{
+    int n,i;
+    cin>>n;
+    int a[n];
+    for(i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    for(i=0;i<n;i++)
+        {
+            cout<<dig(abs(a[i]))<<" ";
+    }
+    
+}
